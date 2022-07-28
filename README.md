@@ -68,9 +68,14 @@ https://bmskin31.github.io/ICEBERGVR/
 
 
 CREDITS:
+PLEASE NOTE:
+Some segments of code are from various links as inserted below, but not all code in all of the links was used.
 -All icons, unless specified otherwise, are from a Font Awesome kit.
 -https://www.w3schools.com/css/ - W3Schools' CSS section was hugely helpful to me when creating my dropdown menus and email submission sections, as their tutorials are indepth and simple at the same time. Their 'try it yourself' option helps hugely in allowing me to create my own code via their tryit editor, which then allowed me to use the same methods on my project.
 https://codepen.io/alphardex/pen/dyPorwJ - the colour scheme and CSS gradient was taken from this Codepen page.
+https://codepen.io/jeyakarthika/pen/nZKYav
+https://codepen.io/tutsplus/pen/wNaGjy
+https://www.w3schools.com/tags/att_input_type_email.asp
 -All images on the site are taken from [the Pexels site.
 ](https://www.pexels.com/)
 END OF FILE
