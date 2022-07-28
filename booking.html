@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/d703c4edd4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+   <div class="navigator">
+
+   <a href="index.html">HOME |</a>
+  <a href="contact.html">CONTACT US |</a>
+  <a href="booking.html">BOOKINGS |</a>
+  <a href="gallery.html">GALLERY |</a>
+  <a href="store.html">STORE </a>
+   </div>
+  
+  <div class="header">
+    <h6>ICEBERG STUDIOS 2022</h6>
+  <h1><u>BOOK NOW</u></h1>
+</div>
+
+   <div class="container">
+  <p><span><u>PLEASE NOTE:</span></u></p>
+  <p>We <u>do not</u> accept visitors without prior appointment. All visitors must book ahead via phone, email, or online booking. <u>You will not be admitted to the visitor centre without prior booking.</u></p>
+</div>
+
+  <div class="container">
+  <p><span><u>Standard Package | <i class="fa-solid fa-fire-flame-curved"></i> | €45.99 per person</span></u></p>
+  <p>The <i>Into the Ice</i> Standard Package includes our immersive virtual reality experience and access to our gift shop. 12+ <br>
+  <i>VR Experience: approx. 60 mins</i></p>
+</div>
+
+  <div class="container">
+  <p><span><u>Silver Package | <i class="fa-solid fa-fire-flame-curved"></i> | €55.99 per person</span></u></p>
+  <p>The <i>Into the Ice</i> Silver Package includes our immersive virtual reality experience and a guided tour of the Iceberg Education Centre. 12+ <br></p>
+</div>
+
+  <div class="container">
+  <p><span><u>Gold Package | <i class="fa-solid fa-fire-flame-curved"></i> | €75.99 per person</span></u></p>
+  <p>The <i>Into the Ice</i> Gold Package includes our immersive virtual reality experience, a guided tour of the Iceberg Education Centre, and a guided tour of Iceberg Studios by a member of the Iceberg Studios Development Team.  12+ <br>
+  <i>VR Experience: approx. 60 mins <br>
+  Education Centre Tour: approx. 30 mins <br>
+  Iceberg Studios Tour: approx. 30 mins</i></p>
+</div>
+
+ 
+  
+<form action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="visitor_name" placeholder="Please enter first name and surname"pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">E-mail:</label>
+    <input type="email" id="email" name="visitor_email" placeholder="Email address" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Contact number:</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="Be sure to include country code where relevant" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adults" name="total_adults" placeholder="..." min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="..." min="0" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkin-date">Check availability:</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+
+  <div class="elem-group">
+    <label for="package-selection">Choose your experience package:</label>
+    <select id="package-preference" name="package-preference" required>
+        <option value="">Choose an experience package from the provided list</option>
+        <option value="standard">€45.99/pp - Standard Package: Virtual Reality Experience Standalone</option>
+        <option value="silver">€55.99/pp - Silver Package: VR Experience + guided tour of Iceberg's Education Centre</option>
+        <option value="gold">€75.99/pp - Gold Package: VR Experience, guided tour of EC and Iceberg Studios</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Notes, requests, or further information:</label>
+    <textarea id="message" name="visitor_message" placeholder="Please include any health concerns here." required></textarea>
+  </div>
+  <button type="submit">Book your experience</button>
+</form>
+   <nav>
+  <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a> |
+  <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a> |
+  <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> |
+  <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+</nav>
+</body>
+</html>

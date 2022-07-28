@@ -1,0 +1,418 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(#123 30%, #9f9fb2);
+  overflow: scroll;
+}
+
+.email {
+  font-family: "EB Garamond", serif;
+  font-weight: lighter;
+  color: #9f9fb2;
+  text-align: center;
+}
+
+  img {
+  border-radius: 48%;
+}
+
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
+
+.display {
+  display: block;
+  border-radius: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.warning {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
+  font-size: 17px;
+  color: #b8b8d1;
+  margin: 20px;
+  padding: 20px;
+}
+
+.navigator {
+  text-align: center;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+
+/* BREEANNA - THESE CONTAINERS LOOK GOOD, USE THEM FOR CONTACT PAGE */
+.container {
+  border: 2px solid #ccc;
+  background-color: #112233;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container::after {
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container p {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Can we increase span element font size??? Let's find out */
+.container span {
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-right: 15px;
+}
+
+/* Make it fit to phone and tablet too */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+
+.fade-in-image { animation: fadeIn 2s; }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: linear-gradient(#123 30%, #667);
+  overflow: hidden;
+  color: #b3b3ce;
+  font-size: 40px;
+}
+
+
+h1 {
+color: #b9b9d5;
+margin-left: 20px;
+text-align: center;
+font-family: Didot, serif;
+  font-stretch: extra-expanded;
+  letter-spacing: 9px;
+  font-size: 50px;
+}
+
+
+h3 {
+  color: #8484a9;
+  margin-left: 20px;
+  text-align: center;
+  font-family: Didot, serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+}
+
+h6 {
+  color: #8484a9;
+  margin-left: 20px;
+  text-align: center;
+  font-family: Didot, serif;
+  font-size: 9px;
+  font-stretch: extra-expanded;
+  letter-spacing: 10px;
+}
+
+p {
+  color: #cbcbe2;
+  margin-left: 20px;
+  text-align: center;
+  font-family: Didot, serif;
+  font-size: 18px;
+  font-stretch: extra-expanded;
+  letter-spacing: 1px;
+}
+  
+
+
+nav {
+  margin-left: 20px;
+  text-align: center;
+}
+
+footer {
+  color: #b9b9d5;
+margin-left: 20px;
+text-align: center;
+font-family: Didot, serif;
+  font-stretch: extra-expanded;
+  letter-spacing: 9px;
+  font-size: 9px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+a { 
+  text-decoration: none;
+font-family: Palatino, "URW Palladio L", serif;
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+/* Make unvisited links lilac-ish*/
+a:link {
+  color: #393ec6;
+}
+
+/* Make visited links a slightly lighter lilac */
+a:visited {
+  color: #967fcc;
+}
+
+/* Hovering over links - WHITE */
+a:hover {
+  color: white;
+}
+
+/* BLUE for selecting links*/
+a:active {
+  color: #499edf;
+}
+
+  * {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #273468;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #2c3849;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+  body {
+  width: 500px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+div.elem-group {
+  margin: 20px 0;
+  color: white;
+}
+
+div.elem-group.inlined {
+  width: 49%;
+  display: inline-block;
+  float: left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'Nanum Gothic';
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  color: #b9b9d5
+  font-family: 'Palatino, 'URW Palladio L', serif';
+  width: 100%;
+  padding: 10px;
+}
+
+div.elem-group.inlined input {
+  width: 95%;
+  display: inline-block;
+  color: white;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border: 1px dotted #ccc;
+}
+
+button {
+  height: 50px;
+  background: orange;
+  border: none;
+  color: white;
+  font-size: 1.25em;
+  font-family: 'Palatino, 'URW Palladio L', serif';
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  border: 2px solid #f7f7f7;
+}
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+  
+}
+ 
